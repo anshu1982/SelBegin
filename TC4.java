@@ -10,27 +10,31 @@ import org.testng.annotations.Test;
 public class TC4 extends BaseClass {
 	
 	@Test
-	public void  loginPlaySubscribe() throws InterruptedException
-	{
-		WebElement Signin = driver.findElement(By.xpath("//ytd-button-renderer[@class='style-scope ytd-masthead style-suggestive size-small']"));
-	  	Signin.click();
-	  	WebElement Email = driver.findElement(By.xpath("//div[@class='Xb9hP'] //input[@id='identifierId' and @type='email']"));
-	  	Email.sendKeys("dramatest18@gmail.com");
-	  	WebElement Next = driver.findElement(By.xpath("//span[@class='RveJvd snByac']"));
-	  	Next.click();
-	  	Thread.sleep(3000);
-	  	WebElement Password = driver.findElement(By.xpath("//div[@class='Xb9hP']//input[@class='whsOnd zHQkBf'or @name='password']"));        
-	  	Password.sendKeys("Dramatest@2012");
-	  	WebElement Next1 = driver.findElement(By.xpath("//span[@class='RveJvd snByac']"));
-	  	Next1.click();
-	  	Thread.sleep(3000);
-	  	List <WebElement> as = driver.findElements(By.id("video-title"));
-	  	int videosize = as.size();
-	    System.out.println("Size" + videosize);
-	  	as.get(2).click();
+
+    public void  loginPlaySubscribe() throws InterruptedException
+    {
+		Thread.sleep(2000);
+		WebElement Signin = driver.findElement(By.xpath	(pr.getProperty("Signin")));
+		Signin.click();
+		WebElement Email = driver.findElement(By.id(pr.getProperty("Email")));
+		Email.sendKeys("dramatest18@gmail.com");
+		WebElement Next = driver.findElement(By.xpath(pr.getProperty("Next")));
+		Next.click();
+		Thread.sleep(3000);
+		WebElement Password = driver.findElement(By.name(pr.getProperty("Password")));
+		Password.sendKeys("Dramatest@2012");
+		WebElement Next1 = driver.findElement(By.xpath(pr.getProperty("Next1")));
+		Next1.click();
+		Thread.sleep(3000);
+		List <WebElement> video = driver.findElements(By.id(pr.getProperty("video")));
+		video.get(1).click();
 	    Thread.sleep(3000);
-	    WebElement Subscribe = driver.findElement(By.xpath("//paper-button[@class='style-scope ytd-subscribe-button-renderer']"));
+	    WebElement Subscribe = driver.findElement(By.xpath(pr.getProperty("Subscribe")));
 	    Subscribe.click();
 	    Thread.sleep(2000);
+		
+		
+		
 	}
+
 }
