@@ -3,12 +3,11 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="org.testing.Testscripts.TC5"/>
-      <class name="org.testing.Testscripts.TC6"/>
-      <class name="org.testing.Testscripts.TC1"/>
-      <class name="org.testing.Testscripts.TC2"/>
-      <class name="org.testing.Testscripts.TC3"/>
-      <class name="org.testing.Testscripts.TC4"/>
+      <class name="org.testing.TestScripts.TC3"/>
+      <class name="org.testing.TestScripts.TC4"/>
+      <class name="org.testing.TestScripts.TC1"/>
+      <class name="org.testing.TestScripts.TC2"/>
+      <class name="org.testing.TestScripts.TC6"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
