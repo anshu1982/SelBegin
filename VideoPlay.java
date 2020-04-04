@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class VideoPlay {
-	
 	ChromeDriver driver;
 	Properties pr;
 	
@@ -20,10 +19,11 @@ public class VideoPlay {
 	
 	public void video() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		List <WebElement> video = driver.findElements(By.id(pr.getProperty("video")));
-		video.get(1).click();
+		video.get(2).click();
 	    Thread.sleep(3000);
 	}
+
 
 }

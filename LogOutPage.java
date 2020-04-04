@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LogOutPage {
-	
+
 	ChromeDriver driver;
 	Properties pr;
 	
@@ -19,14 +19,17 @@ public class LogOutPage {
 		
 		public void logedout() throws InterruptedException
 		{
-			 //WebElement image = driver.findElement(By.xpath(pr.getProperty("image")));
-				//image.click();
-				Thread.sleep(1000);
+			Thread.sleep(2000);
+			 WebElement image = driver.findElement(By.xpath(pr.getProperty("image")));
+				image.click();
+				Thread.sleep(3000);
 				WebElement Signout = driver.findElement(By.xpath((pr.getProperty("Signout"))));
 				Signout.click();
-				Thread.sleep(2000);
-				driver.close();
+				Thread.sleep(3000);
+				//driver.close();
+				//Thread.sleep(3000);
 	}
 	
 
 }
+

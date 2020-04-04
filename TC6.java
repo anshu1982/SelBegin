@@ -1,28 +1,28 @@
 package org.testing.TestScripts;
 
-import java.util.Properties;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testing.Base.BaseClass;
 import org.testing.Pages.LogOutPage;
 import org.testing.Pages.LoginPage;
 import org.testng.annotations.Test;
-import org.testing.Pages.VideoPlay;
 
-public class TC6 extends BaseClass {
+public class TC6  extends BaseClass{
 	
- @Test
-	public void Library() throws InterruptedException
+	@Test
+	public void Libraries() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		LoginPage login = new LoginPage(driver,pr);
-		login.signin("dramatest18@gmail.com","Dramatest@2012");
+		login.signin("testerselinium@gmail.com","Tester@selinium");
 		Thread.sleep(3000);
 		WebElement Library = driver.findElement(By.id(pr.getProperty("Library")));
 		Library.click();
        Thread.sleep(3000);
        LogOutPage logout = new LogOutPage(driver,pr);
-		logout.logedout();}
+		logout.logedout();
+		//Thread.sleep(3000);}
+	}
+
 }
+
