@@ -1,0 +1,14 @@
+Signin://ytd-button-renderer[@class='style-scope ytd-masthead style-suggestive size-small']
+Signout://a[@href='/logout']
+image://img[@id='img']
+Email:identifierId
+Next://span[@class='RveJvd snByac']
+Password:password
+Next1://span[@class='RveJvd snByac']
+Trending://yt-formatted-string[text()='Trending']
+Subscriptions://a[@href='/feed/subscriptions']
+video:video-title
+Subscribe://button[contains(@aria-label,'Subscribe to')]
+History://a[href='/feed/history' or @title='History']
+Library:endpoint
+Like://yt-icon[@class='style-scope ytd-toggle-button-renderer']
