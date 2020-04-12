@@ -14,7 +14,7 @@ public class TC6  extends BaseClass{
 	{
 		Thread.sleep(1000);
 		LoginPage login = new LoginPage(driver,pr);
-		login.signin("testerselinium@gmail.com","Tester@selinium");
+		login.signin("FatherDad52@gmail.com","#FatherDad52@");
 		Thread.sleep(3000);
 		WebElement Library = driver.findElement(By.id(pr.getProperty("Library")));
 		Library.click();
@@ -25,4 +25,5 @@ public class TC6  extends BaseClass{
 	}
 
 }
+
 

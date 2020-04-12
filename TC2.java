@@ -4,9 +4,11 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testing.Assertion.Assert;
 import org.testing.Base.BaseClass;
 import org.testing.Pages.LogOutPage;
 import org.testing.Pages.LoginPage;
+
 import org.testing.Utilities.ScreenShotCapture;
 import org.testng.annotations.Test;
 
@@ -16,9 +18,11 @@ public class TC2 extends BaseClass{
 	public void  Subscriptioned() throws InterruptedException, IOException
 	{
 
-		Thread.sleep(1000);
+		   String expectedUrl ="https://www.youtube.com/";
+		   Thread.sleep(2000);
+		Assert.Assert_Url(expectedUrl, driver.getCurrentUrl());
 		 LoginPage login = new LoginPage(driver,pr);
-		login.signin("testerselinium@gmail.com","Tester@selinium");
+		login.signin("FatherDad52@gmail.com","#FatherDad52@");
 		Thread.sleep(3000);
 		
 		WebElement Subscriptions = driver. findElement(By.xpath(pr.getProperty("Subscriptions")));
@@ -32,3 +36,4 @@ public class TC2 extends BaseClass{
 		//Thread.sleep(3000);}
 }
 }
+

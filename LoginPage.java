@@ -21,12 +21,12 @@ public class LoginPage {
 		WebElement Signin = driver.findElement(By.xpath	(pr.getProperty("Signin")));
 		Signin.click();
 		WebElement Email = driver.findElement(By.id(pr.getProperty("Email")));
-		Email.sendKeys("testerselinium@gmail.com");
+		Email.sendKeys("FatherDad52@gmail.com");
 		WebElement Next = driver.findElement(By.xpath(pr.getProperty("Next")));
 		Next.click();
 		Thread.sleep(3000);
 		WebElement Password = driver.findElement(By.name(pr.getProperty("Password")));
-		Password.sendKeys("Tester@selinium");
+		Password.sendKeys("#FatherDad52@");
 		WebElement Next1 = driver.findElement(By.xpath(pr.getProperty("Next1")));
 		Next1.click();
 		Thread.sleep(3000);
@@ -35,6 +35,7 @@ public class LoginPage {
 	
 
 }
+
 
 
 

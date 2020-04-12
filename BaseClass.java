@@ -14,13 +14,15 @@ public class BaseClass {
 	
 	public ChromeDriver driver;
 	public Properties pr;
+
+	
 	
 	@BeforeMethod
 	public void BrowserLaunch() throws InterruptedException, IOException
 	{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
-		    System.setProperty("webdriver.chrome.driver","C://Users//Phonato -Shuchi//Desktop//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://Users//Phonato -Shuchi//Desktop//chromedriver.exe");
 		    driver = new ChromeDriver();
 		    pr= new Properties();
 			driver.get("https://www.youtube.com/");
@@ -36,9 +38,12 @@ public class BaseClass {
 			@AfterMethod
 			public void BrowserClose() throws InterruptedException
 			{
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			driver.close();
 			
 			}
 
 }
+
+
+

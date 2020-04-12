@@ -21,9 +21,10 @@ public class VideoPlay {
 	{
 		Thread.sleep(3000);
 		List <WebElement> video = driver.findElements(By.id(pr.getProperty("video")));
-		video.get(2).click();
+		video.get(1).click();
 	    Thread.sleep(3000);
 	}
 
 
 }
+
