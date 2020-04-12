@@ -1,4 +1,3 @@
-
 package org.testing.Utilities;
 
 import org.apache.log4j.Logger;
@@ -20,5 +19,4 @@ public class Logs {
 
 		
 	}
-
 

@@ -20,7 +20,7 @@ public class TC4 extends BaseClass {
         {
 		 Thread.sleep(2500);
 		LoginPage login = new LoginPage(driver,pr);
-		login.signin("FatherDad52@gmail.com","#FatherDad52@");
+		login.signin("testerselinium@gmail.com","Tester@selinium");
 		Thread.sleep(3000);
 		VideoPlay vd = new VideoPlay(driver,pr);
 		vd.video();
